@@ -5,28 +5,18 @@ Parameters:
   AWSConnectARNParameter:
     Type: String
     Description: "The ARN of the desired AWS Connect instance to grab metric data from"
+    Default: e55a89e5-1e8f-4696-8955-1688d28c7e36
 
   InstanceId:
     Type: String
     Description: The ID of the Connect instance to monitor
+    Default: e55a89e5-1e8f-4696-8955-1688d28c7e36
 
   SalesforceRestAPIFlowARNParameter:
     Type: String
     Description: "The ARN of the SalesforceRestAPI flow in the dev instance for AWS Connect, to grab specific metric data for that specific flow"
-
-  TopicName:
-    Type: String
-    Description: Name of the SNS topic
-    Default: MySNSTopic
-
-  SourceEmail:
-    Type: String
-    Description: The source email address for sending SES notifications
-
-  SubscriberEmails:
-    Type: CommaDelimitedList
-    Description: List of email addresses to subscribe to the SNS topic
-  
+    Default: e55a89e5-1e8f-4696-8955-1688d28c7e36
+   
 Resources:
   MyLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
