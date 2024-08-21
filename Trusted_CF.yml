@@ -3,6 +3,7 @@ Parameters:
   CustomerName:
     Type: String
     Description: Customer-1
+    Default: Customer-1
  
 Resources:
   # S3 Bucket Creation
