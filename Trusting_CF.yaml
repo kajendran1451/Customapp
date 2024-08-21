@@ -16,7 +16,22 @@ Parameters:
     Type: String
     Description: "The ARN of the SalesforceRestAPI flow in the dev instance for AWS Connect, to grab specific metric data for that specific flow"
     Default: e55a89e5-1e8f-4696-8955-1688d28c7e36
-   
+    
+  TopicName:
+    Type: String
+    Description: Name of the SNS topic
+    Default: MySNSTopic
+
+  SourceEmail:
+    Type: String
+    Description: The source email address for sending SES notifications
+    Default: rajalakshmi.ramesh@cdw.com
+
+  SubscriberEmails:
+    Type: CommaDelimitedList
+    Description: List of email addresses to subscribe to the SNS topic
+    Default: Naveen.Ravichandran@cdw.com
+  
 Resources:
   MyLambdaExecutionRole:
     Type: 'AWS::IAM::Role'
