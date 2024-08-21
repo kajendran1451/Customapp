@@ -138,7 +138,7 @@ Resources:
       Key: 'index.js'
       Content: |
         async function initialFetchCloudWatchData() {
-            let baseURL = "https://gbpubojrak.execute-api.us-east-1.amazonaws.com/testing/yamlcloudwatchtest";
+            let baseURL = "https://tztqsv9x8f.execute-api.us-east-1.amazonaws.com/testing/yamlcloudwatchtest";
             try {
                 let response = await fetch(baseURL);
                 if (!response.ok) {
@@ -163,7 +163,7 @@ Resources:
         }
 
         async function customTimeFetchCloudWatchData(timeframeLength, timeframeUnit) {
-            let baseURL = "https://gbpubojrak.execute-api.us-east-1.amazonaws.com/testing/yamlcloudwatchtest";
+            let baseURL = "https://tztqsv9x8f.execute-api.us-east-1.amazonaws.com/testing/yamlcloudwatchtest";
             let timeframeLengthParam = `/?timeframeLength=${timeframeLength}&`;
             let timeframeUnitParam = `timeframeUnit=${timeframeUnit}`;
             let paramURL = baseURL + timeframeLengthParam + timeframeUnitParam;
