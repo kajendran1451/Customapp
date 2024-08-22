@@ -7,7 +7,7 @@ th, td {
 }
 
 p {
-    font-size: 100px;
+    font-size: 40px;
 }
 
 #timeframeLength:focus::placeholder {
