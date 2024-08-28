@@ -1,5 +1,5 @@
 async function initialFetchCloudWatchData() {
-    let baseURL = "https://e8fncqyx5e.execute-api.us-east-1.amazonaws.com/testing/yamlcloudwatchtest";
+    let baseURL = "https://appl.auth.us-east-1.amazoncognito.com/oauth2/authorize?client_id=1h5sh7sgsua3mrohhvpjmfpsnp&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fe8fncqyx5e.execute-api.us-east-1.amazonaws.com%2Ftesting%2Fyamlcloudwatchtest";
     try {
        let response = await fetch(baseURL);
         if (!response.ok) {
@@ -24,7 +24,7 @@ async function initialFetchCloudWatchData() {
 }
 
 async function customTimeFetchCloudWatchData(timeframeLength, timeframeUnit) {
-    let baseURL = "https://e8fncqyx5e.execute-api.us-east-1.amazonaws.com/testing/yamlcloudwatchtest";
+    let baseURL = "https://appl.auth.us-east-1.amazoncognito.com/oauth2/authorize?client_id=1h5sh7sgsua3mrohhvpjmfpsnp&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fe8fncqyx5e.execute-api.us-east-1.amazonaws.com%2Ftesting%2Fyamlcloudwatchtest";
     let timeframeLengthParam = `/?timeframeLength=${timeframeLength}&`;
     let timeframeUnitParam = `timeframeUnit=${timeframeUnit}`;
     let paramURL = baseURL + timeframeLengthParam + timeframeUnitParam;
